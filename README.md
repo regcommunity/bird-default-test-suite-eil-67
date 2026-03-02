@@ -6,33 +6,6 @@ Default Test Suite test suite for BIRD Bench
 
 This is a comprehensive test suite for BIRD regulatory templates and data validation.
 
-## Installation
-
-### Automatic Installation (Recommended)
-
-```bash
-# Clone and install via Django management command
-python manage.py fetch_test_suite --repo github.com/benjamin-arfa/bird-default-test-suite --name bird_default_test_suite
-```
-
-### Manual Installation
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/benjamin-arfa/bird-default-test-suite.git
-   cd bird-default-test-suite
-   ```
-
-2. Run the installer:
-   ```bash
-   python install.py
-   ```
-
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ## Structure
 
 ```
@@ -53,18 +26,9 @@ bird_default_test_suite/
 ```
 
 ## Usage
+Point to this in the FreeBIRD aapplication
 
-### Running Tests
 
-After installation, the test suite is automatically integrated:
-
-```bash
-# Run all tests (including this suite)
-python pybirdai/utils/run_tests.py --config-file tests/configuration_file_tests.json
-
-# Run only this suite's tests
-python pybirdai/utils/run_tests.py --config-file tests/bird_default_test_suite/configuration_file_tests.json
-```
 
 ### Configuration
 
@@ -87,8 +51,7 @@ Edit `tests/bird_default_test_suite/configuration_file_tests.json` to configure 
 ### Adding Test Data
 
 1. Create fixture directory: `tests/fixtures/templates/{reg_tid}/{dp_suffix}/{scenario}/`
-2. Add SQL files:
-   - `sql_inserts.sql`: Setup data for the test (cleanup handled automatically by database service)
+2. Add CSV Fies (previosuly SQL files:   - `sql_inserts.sql`: Setup data for the test (cleanup handled automatically by database service))
 3. Update configuration file with new test entry
 
 ## Test Scenarios
@@ -98,15 +61,6 @@ This test suite includes scenarios for:
 - Data point calculations
 - Compliance checks
 - Error handling
-
-## Dependencies
-
-- Django >= 4.0
-- pytest >= 6.0
-- pyecore >= 0.15.1
-- pytest-xdist >= 2.0
-
-See `requirements.txt` for complete dependency list.
 
 ## Contributing
 
