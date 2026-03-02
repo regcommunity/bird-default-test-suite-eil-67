@@ -72,7 +72,7 @@ This test suite includes scenarios for:
 
 ## License
 
-Eclipse Public License 2.0 (EPL-2.0)
+Apache Software License v2
 
 ## Version
 
