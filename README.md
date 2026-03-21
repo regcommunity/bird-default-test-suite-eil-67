@@ -40,7 +40,7 @@ Edit `tests/bird_default_test_suite/configuration_file_tests.json` to configure 
     {
       "reg_tid": "F_05_01_REF_FINREP_3_0",
       "dp_suffix": "152589_REF",
-      "dp_value": 83491250,
+      "dp_value": 83491261,
       "scenario": "basic_scenario",
       "_suite": "bird_default_test_suite"
     }
